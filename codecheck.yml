@@ -1,0 +1,21 @@
+---
+version: https://codecheck.org.uk/spec/config/1.0/
+
+manifest:
+  - file: figures-cohens_d.html
+    comment: 'Figure 1 and 2 and Table 2 in the paper'
+  - file: figures-correlation.html
+    comment: 'Figure 3 and 4 and Table 3 in the paper'
+
+paper:
+  title: "Sample size estimation for task-related functional MRI studies using Bayesian updating."
+  authors:
+    - name: Eduard Klapwijk
+      ORCID: 0000-0002-8936-0365
+    - name: Joran Jongerling
+      ORCID: 0000-0001-5697-1381
+    - name: Herbert Hoijtink
+      ORCID: 0000-0001-8509-1973
+    - name Eveline Crone
+      ORCID: 0000-0002-7508-6078
+  reference: https://doi.org/10.31234/osf.io/cz32t (currently under review at Developmental Cognitive Neuroscience)
