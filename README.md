@@ -1,14 +1,14 @@
-## Sample size estimation for task-related functional MRI studies using Bayesian updating
+# Sample size estimation for task-related functional MRI studies using Bayesian updating
 
-### Code Checking materials
+## Code Checking materials
 
 This repository contains the code and instructions for reproducing the following paper:
 
 Klapwijk, E. T., Jongerling, J., Hoijtink, H., & Crone, E. (2024, July 9). Sample size estimation for task-related functional MRI studies using Bayesian updating. <https://doi.org/10.31234/osf.io/cz32t>
 
-### Contents
+## Contents
 
-#### Main files
+### Main files
 
 The following two [Quarto](https://quarto.org/) Markdown files (`*.qmd`) are the main files containing the code to reproduce the figures and tables:
 
@@ -16,7 +16,7 @@ The following two [Quarto](https://quarto.org/) Markdown files (`*.qmd`) are the
 
 -   `figures-correlation.qmd` (Figure 3 and 4; Table 2)
 
-#### HTML output
+### HTML output
 
 These files are rendered as hmtl pages containing all the individual and collected figures:
 
@@ -24,7 +24,7 @@ These files are rendered as hmtl pages containing all the individual and collect
 
 -   `figures-correlation.html`
 
-#### PNG output
+### PNG output
 
 The individual .png files are saved in the following directories:
 
@@ -32,7 +32,7 @@ The individual .png files are saved in the following directories:
 
 -   `figures-correlation_files/figure-html/`
 
-### Workflow
+## Workflow
 
 The analysis for this paper is implemented in the statistical programming language R. To reproduce the results, you will need installed on your computer the [R software](https://cloud.r-project.org/) itself, optionally (but recommended) [RStudio Desktop](https://posit.co/download/rstudio-desktop/), and [Quarto](https://quarto.org/docs/get-started/).
 
