@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.555">
+<meta name="generator" content="quarto-1.4.553">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -146,7 +146,7 @@ window.Quarto = {
 <span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>feedback_fig <span class="ot">&lt;-</span> <span class="fu">estim_corr</span>(<span class="at">data =</span> data_feedback,</span>
 <span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>                           <span class="at">vars_of_interest =</span> <span class="fu">c</span>(<span class="st">"dif"</span>, <span class="st">"age"</span>),</span>
 <span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>                           <span class="at">sample_size =</span> <span class="dv">20</span><span class="sc">:</span><span class="dv">271</span>, </span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>                           <span class="at">k =</span> <span class="dv">10</span>, </span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>                           <span class="at">k =</span> <span class="dv">1000</span>, </span>
 <span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>                           <span class="at">name =</span> <span class="st">"A. Feedback DLPFC corr. with age"</span>)</span>
 <span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="co"># plot figure 3a</span></span>
 <span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>feedback_fig<span class="sc">$</span>fig_corr</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -190,7 +190,7 @@ Figure&nbsp;2
 <span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>                           <span class="at">vars_of_interest =</span> <span class="fu">c</span>(<span class="st">"lnacc_self_winvsloss"</span>, </span>
 <span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>                                                <span class="st">"age"</span>), </span>
 <span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>                           <span class="at">sample_size =</span> <span class="dv">20</span><span class="sc">:</span><span class="dv">221</span>, </span>
-<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>                           <span class="at">k =</span> <span class="dv">10</span>, </span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>                           <span class="at">k =</span> <span class="dv">1000</span>, </span>
 <span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>                           <span class="at">name =</span> <span class="st">"B. Gambling NAcc corr. with age"</span>)</span>
 <span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a><span class="co"># plot figure 3b</span></span>
@@ -239,7 +239,7 @@ Figure&nbsp;4
 <span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a>                           <span class="at">vars_of_interest =</span> <span class="fu">c</span>(<span class="st">"dif"</span>,</span>
 <span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a>                                                <span class="st">"age"</span>),</span>
 <span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a>                           <span class="at">sample_size =</span> <span class="dv">20</span><span class="sc">:</span><span class="dv">149</span>, </span>
-<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a>                           <span class="at">k =</span> <span class="dv">10</span>, </span>
+<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a>                           <span class="at">k =</span> <span class="dv">1000</span>, </span>
 <span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a>                           <span class="at">name =</span> <span class="st">"C. Self-evaluations mPFC corr. with age"</span>)</span>
 <span id="cb5-15"><a href="#cb5-15" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb5-16"><a href="#cb5-16" aria-hidden="true" tabindex="-1"></a><span class="co"># plot figure 3c</span></span>
@@ -288,7 +288,7 @@ Figure&nbsp;6
 <span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a>                             <span class="at">vars_of_interest =</span> <span class="fu">c</span>(<span class="st">"dif"</span>, </span>
 <span id="cb7-11"><a href="#cb7-11" aria-hidden="true" tabindex="-1"></a>                                                  <span class="st">"age"</span>),</span>
 <span id="cb7-12"><a href="#cb7-12" aria-hidden="true" tabindex="-1"></a>                             <span class="at">sample_size =</span> <span class="dv">20</span><span class="sc">:</span><span class="dv">156</span>, </span>
-<span id="cb7-13"><a href="#cb7-13" aria-hidden="true" tabindex="-1"></a>                             <span class="at">k =</span> <span class="dv">10</span>, </span>
+<span id="cb7-13"><a href="#cb7-13" aria-hidden="true" tabindex="-1"></a>                             <span class="at">k =</span> <span class="dv">1000</span>, </span>
 <span id="cb7-14"><a href="#cb7-14" aria-hidden="true" tabindex="-1"></a>                             <span class="at">name =</span> <span class="st">"D. Gaining self NAcc corr. with age"</span>)</span>
 <span id="cb7-15"><a href="#cb7-15" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb7-16"><a href="#cb7-16" aria-hidden="true" tabindex="-1"></a><span class="co"># plot figure 3d</span></span>
@@ -370,7 +370,7 @@ Figure&nbsp;10: For each task, for five different sample sizes (starting with <s
 <span id="cb11-9"><a href="#cb11-9" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">filter</span>(permutation <span class="sc">==</span> <span class="st">"Overall"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>Use numbers to produce a table in text:</p>
-<table class="caption-top table">
+<table class="table">
 <colgroup>
 <col style="width: 14%">
 <col style="width: 14%">
@@ -395,37 +395,37 @@ Figure&nbsp;10: For each task, for five different sample sizes (starting with <s
 <tr class="odd">
 <td>Feedback</td>
 <td>DLPFC</td>
-<td><strong>0.39</strong> (-0.05, 0.7)</td>
-<td><strong>0.42</strong> (0.21, 0.6), <em>n =</em> 70</td>
-<td><strong>0.38</strong> (0.21, 0.52), <em>n =</em> 120</td>
-<td><strong>0.36</strong> (0.22, 0.48), <em>n =</em> 170</td>
+<td><strong>0.38</strong> (-0.06, 0.69)</td>
+<td><strong>0.38</strong> (0.16, 0.56), <em>n =</em> 70</td>
+<td><strong>0.37</strong> (0.21, 0.52), <em>n =</em> 120</td>
+<td><strong>0.38</strong> (0.24, 0.5), <em>n =</em> 170</td>
 <td><strong>0.38</strong> (0.27, 0.47), <em>N</em> = 271</td>
 </tr>
 <tr class="even">
 <td>Gambling</td>
 <td>NAcc</td>
-<td><strong>-0.04</strong> (-0.47, 0.4)</td>
-<td><strong>0.01</strong> (-0.25, 0.26), <em>n =</em> 60</td>
-<td><strong>-0.01</strong> (-0.21, 0.19), <em>n =</em> 100</td>
-<td><strong>-0.03</strong> (-0.2, 0.13), <em>n =</em> 140</td>
+<td><strong>-0.02</strong> (-0.44, 0.4)</td>
+<td><strong>-0.04</strong> (-0.29, 0.21), <em>n =</em> 60</td>
+<td><strong>-0.04</strong> (-0.23, 0.16), <em>n =</em> 100</td>
+<td><strong>-0.04</strong> (-0.2, 0.13), <em>n =</em> 140</td>
 <td><strong>-0.04</strong> (-0.17, 0.09), <em>N =</em> 221</td>
 </tr>
 <tr class="odd">
 <td>Self-evaluations</td>
 <td>mPFC</td>
-<td><strong>0.05</strong> (-0.39, 0.47)</td>
-<td><strong>0.11</strong> (-0.18, 0.38), <em>n =</em> 46</td>
-<td><strong>0.05</strong> (-0.18, 0.28), <em>n =</em> 72</td>
-<td><strong>0.06</strong> (-0.14, 0.26), <em>n =</em> 98</td>
+<td><strong>0.07</strong> (-0.36, 0.48)</td>
+<td><strong>0.06</strong> (-0.23, 0.34), <em>n =</em> 46</td>
+<td><strong>0.06</strong> (-0.17, 0.29), <em>n =</em> 72</td>
+<td><strong>0.06</strong> (-0.14, 0.25), <em>n =</em> 98</td>
 <td><strong>0.06</strong> (-0.1, 0.22), <em>N</em> = 149</td>
 </tr>
 <tr class="even">
 <td>Gaining self</td>
 <td>NAcc</td>
-<td><strong>-0.29</strong> (-0.64, 0.16)</td>
-<td><strong>-0.09</strong> (-0.37, 0.2), <em>n =</em> 47</td>
-<td><strong>-0.12</strong> (-0.33, 0.11), <em>n =</em> 74</td>
-<td><strong>-0.13</strong> (-0.32, 0.07), <em>n =</em> 101</td>
+<td><strong>-0.18</strong> (-0.56, 0.26)</td>
+<td><strong>-0.17</strong> (-0.44, 0.11), <em>n =</em> 47</td>
+<td><strong>-0.17</strong> (-0.38, 0.06), <em>n =</em> 74</td>
+<td><strong>-0.17</strong> (-0.35, 0.03), <em>n =</em> 101</td>
 <td><strong>-0.17</strong> (-0.31, -0.01), <em>N</em> = 156</td>
 </tr>
 </tbody>

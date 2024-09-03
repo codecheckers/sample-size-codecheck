@@ -38,7 +38,7 @@ data_feedback$dif <- data_feedback$mfg_learning - data_feedback$mfg_application
 feedback_fig <- estim_corr(data = data_feedback,
                            vars_of_interest = c("dif", "age"),
                            sample_size = 20:271, 
-                           k = 10, 
+                           k = 1000, 
                            name = "A. Feedback DLPFC corr. with age")
 # plot figure 3a
 feedback_fig$fig_corr
@@ -70,7 +70,7 @@ gambling_fig <- estim_corr(data = gambling,
                            vars_of_interest = c("lnacc_self_winvsloss", 
                                                 "age"), 
                            sample_size = 20:221, 
-                           k = 10, 
+                           k = 1000, 
                            name = "B. Gambling NAcc corr. with age")
 
 # plot figure 3b
@@ -107,7 +107,7 @@ selfeval_fig <- estim_corr(data = data_self,
                            vars_of_interest = c("dif",
                                                 "age"),
                            sample_size = 20:149, 
-                           k = 10, 
+                           k = 1000, 
                            name = "C. Self-evaluations mPFC corr. with age")
 
 # plot figure 3c
@@ -144,7 +144,7 @@ vicar_char_fig <- estim_corr(data = data_vicar,
                              vars_of_interest = c("dif", 
                                                   "age"),
                              sample_size = 20:156, 
-                             k = 10, 
+                             k = 1000, 
                              name = "D. Gaining self NAcc corr. with age")
 
 # plot figure 3d

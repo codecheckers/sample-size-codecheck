@@ -36,7 +36,7 @@ feedback_fig <- estim_diff(data = feedback,
                            vars_of_interest = c("mfg_learning",
                                                 "mfg_application"),
                            sample_size = 20:271, 
-                           k = 10, 
+                           k = 1000, 
                            name = "A. Feedback DLPFC")
 
 # plot figure 1a
@@ -69,7 +69,7 @@ gambling_fig <- estim_diff(data = gambling,
                            vars_of_interest = c("lnacc_self_win", 
                                                 "lnacc_self_loss"), 
                            sample_size = 20:221, 
-                           k = 10, 
+                           k = 1000, 
                            name = "B. Gambling NAcc")
 # plot figure 1b
 gambling_fig$fig_cohens_d
@@ -101,7 +101,7 @@ selfeval_fig <- estim_diff(data = self_eval,
                            vars_of_interest = c("mpfc_self", 
                                                 "mpfc_control"),
                            sample_size = 20:149, 
-                           k = 10, 
+                           k = 1000, 
                            name = "C. Self-evaluations mPFC")
 
 # plot figure 1c
@@ -134,7 +134,7 @@ vicar_char_fig <- estim_diff(data = vicar_char,
                              vars_of_interest = c("nacc_selfgain", 
                                                   "nacc_bothnogain"),
                              sample_size = 20:156, 
-                             k = 10, 
+                             k = 1000, 
                              name = "D. Gaining self NAcc")
 
 # plot figure 1d
