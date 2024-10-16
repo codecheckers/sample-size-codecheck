@@ -67,12 +67,13 @@ The following files are uploaded to a deposit on Zenodo from the directory `code
 print(sessionInfo())
 ```
 
-3.  I installed the packages. Both failed to install due to my folder having a 00LOCK folder. I deleted the folder which led to the package successfully installing. neuroUP also installed dependency 'boostrap'.
+3.  I installed the packages. Both failed to install due to my folder having a 00LOCK folder. I deleted the folder which led to the package successfully installing. neuroUP also installed dependency 'boostrap'. I later also installed the float package hoping that this would result in the Codecheck image being displayed.
 
 ```{r Packages}
 # # not run
 # install.packages("neuroUp")
 # install.packages("patchwork")
+# install.packages("float")
 ```
 
 3.  I opened figures-cohens_d.qmd and clicked on render at **11:33 CEST**. During the runtime I went back to the [CODECHECK documentation](https://codecheck.org.uk/guide/community-workflow). The Background Job quickly stalled at `16% [fig-1a]`. It increased to `48%` by 13:46 CEST. It was still `48%` at 15:47 CEST (after \~3.5 hours). A markdown file opened itself "**Code for Figures 1-2 based on Cohen's d**" after \~8 hours. The background job kept running. I stopped the job after more than 8 hours (8:33:40).
@@ -95,7 +96,6 @@ knitr::include_graphics("../figures-cohens_d_files/figure-html/fig-1-total-1.png
 knitr::include_graphics("../codecheck/figures/fig-1-total-1.png")
 ```
 
-
 ```{r fig-2-original, echo = FALSE, message=FALSE, fig.align='center', fig.cap='Original figure 2', out.width='0.6\\linewidth'}
 knitr::include_graphics("../figures-cohens_d_files/figure-html/fig-2-total-1.png")
 ```
@@ -104,7 +104,6 @@ knitr::include_graphics("../figures-cohens_d_files/figure-html/fig-2-total-1.png
 knitr::include_graphics("../codecheck/figures/fig-2-total-1.png")
 ```
 
-
 ```{r fig-3-original, echo = FALSE, message=FALSE, fig.align='center', fig.cap='Original figure 3', out.width='0.6\\linewidth'}
 knitr::include_graphics("../figures-correlations_files/figure-html/fig-3-total-1.png")
 ```
@@ -112,7 +111,6 @@ knitr::include_graphics("../figures-correlations_files/figure-html/fig-3-total-1
 ```{r fig-3-checked, echo = FALSE, message=FALSE, fig.align='center', fig.cap='Reproduced figure 3', out.width='0.6\\linewidth'}
 knitr::include_graphics("../codecheck/figures/fig-3-total-1.png")
 ```
-
 
 ```{r fig-4-original, echo = FALSE, message=FALSE, fig.align='center', fig.cap='Original figure 4', out.width='0.6\\linewidth'}
 knitr::include_graphics("../figures-correlations_files/figure-html/fig-4-total-1.png")
