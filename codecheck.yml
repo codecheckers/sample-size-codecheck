@@ -19,3 +19,12 @@ paper:
     - name: Eveline Crone
       ORCID: 0000-0002-7508-6078
   reference: https://doi.org/10.31234/osf.io/cz32t (currently under review at Developmental Cognitive Neuroscience)
+
+codechecker:
+  - name: Lukas Röseler
+    ORCID: 0000-0002-6446-1901
+
+report:
+certificate: 2024-0XX
+check_time: "2024-10-15"
+repository: https://github.com/codecheckers/sample-size-codecheck
