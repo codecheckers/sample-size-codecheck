@@ -87,37 +87,37 @@ Here are the original figure from the directory `code/` and the reproduced figur
 
 ## Original and Reproduced Figures
 
-```{r fig-1-original, echo=FALSE, fig.align='center', fig.cap='Original figure', message=FALSE, out.width='0.6\\linewidth'}
+```{r fig-1-original, echo=FALSE, fig.align='center', fig.cap='Original figure 1', message=FALSE, out.width='0.6\\linewidth'}
 knitr::include_graphics("../figures-cohens_d_files/figure-html/fig-1-total-1.png")
 ```
 
-```{r fig-1-checked, echo = FALSE, message=FALSE, fig.align='center', fig.cap='Reproduced figure', out.width='0.6\\linewidth'}
+```{r fig-1-checked, echo = FALSE, message=FALSE, fig.align='center', fig.cap='Reproduced figure 1', out.width='0.6\\linewidth'}
 knitr::include_graphics("../codecheck/figures/fig-1-total-1.png")
 ```
 
 
-```{r fig-2-original, echo = FALSE, message=FALSE, fig.align='center', fig.cap='Original figure', out.width='0.6\\linewidth'}
+```{r fig-2-original, echo = FALSE, message=FALSE, fig.align='center', fig.cap='Original figure 2', out.width='0.6\\linewidth'}
 knitr::include_graphics("../figures-cohens_d_files/figure-html/fig-2-total-1.png")
 ```
 
-```{r fig-2-checked, echo = FALSE, message=FALSE, fig.align='center', fig.cap='Reproduced figure', out.width='0.6\\linewidth'}
+```{r fig-2-checked, echo = FALSE, message=FALSE, fig.align='center', fig.cap='Reproduced figure 2', out.width='0.6\\linewidth'}
 knitr::include_graphics("../codecheck/figures/fig-2-total-1.png")
 ```
 
 
-```{r fig-3-original, echo = FALSE, message=FALSE, fig.align='center', fig.cap='Original figure', out.width='0.6\\linewidth'}
+```{r fig-3-original, echo = FALSE, message=FALSE, fig.align='center', fig.cap='Original figure 3', out.width='0.6\\linewidth'}
 knitr::include_graphics("../figures-correlations_files/figure-html/fig-3-total-1.png")
 ```
 
-```{r fig-3-checked, echo = FALSE, message=FALSE, fig.align='center', fig.cap='Reproduced figure', out.width='0.6\\linewidth'}
+```{r fig-3-checked, echo = FALSE, message=FALSE, fig.align='center', fig.cap='Reproduced figure 3', out.width='0.6\\linewidth'}
 knitr::include_graphics("../codecheck/figures/fig-3-total-1.png")
 ```
 
 
-```{r fig-4-original, echo = FALSE, message=FALSE, fig.align='center', fig.cap='Original figure', out.width='0.6\\linewidth'}
+```{r fig-4-original, echo = FALSE, message=FALSE, fig.align='center', fig.cap='Original figure 4', out.width='0.6\\linewidth'}
 knitr::include_graphics("../figures-correlations_files/figure-html/fig-4-total-1.png")
 ```
 
-```{r fig-4-checked, echo = FALSE, message=FALSE, fig.align='center', fig.cap='Reproduced figure', out.width='0.6\\linewidth'}
+```{r fig-4-checked, echo = FALSE, message=FALSE, fig.align='center', fig.cap='Reproduced figure 4', out.width='0.6\\linewidth'}
 knitr::include_graphics("../codecheck/figures/fig-4-total-1.png")
 ```
