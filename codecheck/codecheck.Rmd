@@ -1,0 +1,123 @@
+---
+author: 'Codechecker: Lukas Röseler (University of Münster, Münster Center for Open
+  Science)'
+output:
+  pdf_document:
+    toc: no
+  html_document:
+    toc: no
+    df_print: paged
+header-includes: \usepackage{float}
+---
+
+```{r logo, echo=FALSE, fig.align='center', fig.pos='H', message=FALSE, out.width='0.3\\linewidth'}
+temp <- tempfile(fileext = ".pdf")
+download.file(url = "https://codecheck.org.uk/img/codecheck_logo.pdf", destfile = temp)
+knitr::include_graphics(temp)
+```
+
+## Prerequisites
+
+I conducted a codecheck of the git repository <https://github.com/eduardklap/sample-size-codecheck.git>, which was created by the author. As suggested in the community-workflow, this document is strongly based on the codecheck [example](https://codecheck.org.uk/guide/community-workflow#examples) by Daniel Nüst of Hopfield-1982 (<https://github.com/codecheckers/Hopfield-1982/blob/master/codecheck/codecheck.Rmd>).
+
+-   `README` file exists
+-   `LICENSE` file exists
+-   `codecheck.yml` file exists
+
+```{r read_codecheck_yaml, message=FALSE, warning=FALSE, include=FALSE}
+library("here") # will start one level up because there is a .git
+library("yaml")
+codecheck_yaml = yaml::read_yaml(here::here("codecheck.yml"))
+```
+
+```{r url_hack,include=FALSE}
+## Temporary hack to make URL
+url_it = function(url) {
+  url = sub("<", "\\\\url{", url)
+  url = sub(">", "}", url)
+  url
+}
+```
+
+---
+title: "`r paste("CODECHECK certificate", codecheck_yaml$certificate)`"
+# somehow subtitle in second code chunk does not work
+# subtitle: "`r codecheck_yaml$report`"
+date: "Report DOI: `r codecheck_yaml$report`` \\newline Check time: `r codecheck_yaml$check_time`"
+---
+
+## The CODECHECK
+
+This report checks the code of the article *`r codecheck_yaml$paper$title`* (`r codecheck_yaml$paper$reference`). See section [Notes](notes) for details about running the code.
+
+**The CODECHECK was successful**. The created figures `figures_cohens_d.html` and `figures-correlations.html` are visually very close to the one in the repository.
+
+The reproduction of the figures from the repository was easy due to the workflow and integration with Quarto and RStudio.
+
+\clearpage
+
+# Codechecker notes {#notes}
+
+The following files are uploaded to a deposit on Zenodo from the directory `codecheck/` in the repository:
+
+1.  I agreed to do the codecheck and read the [CODECHECK process](https://codecheck.org.uk/process/) and the [README.md](https://github.com/eduardklap/sample-size-codecheck?tab=readme-ov-file) from the associated project.
+2.  As suggested under *Workflow*, I created a new RStudio project (Version control) and entered the URL of the repository to clone it. This was my R version:
+
+```{r Session Info}
+print(sessionInfo())
+```
+
+3.  I installed the packages. Both failed to install due to my folder having a 00LOCK folder. I deleted the folder which led to the package successfully installing. neuroUP also installed dependency 'boostrap'.
+
+```{r Packages}
+# # not run
+# install.packages("neuroUp")
+# install.packages("patchwork")
+```
+
+3.  I opened figures-cohens_d.qmd and clicked on render at **11:33 CEST**. During the runtime I went back to the [CODECHECK documentation](https://codecheck.org.uk/guide/community-workflow). The Background Job quickly stalled at `16% [fig-1a]`. It increased to `48%` by 13:46 CEST. It was still `48%` at 15:47 CEST (after \~3.5 hours). A markdown file opened itself "**Code for Figures 1-2 based on Cohen's d**" after \~8 hours. The background job kept running. I stopped the job after more than 8 hours (8:33:40).
+4.  I started rendering the code of the figures-correlations at 20:06 CEST. 48% after 1h. Accidentally stopped at 21:11 CEST, restarted. Finished at 22:47 CEST.
+5.  I created a directory *codecheck* and saved this file in it.
+6.  I could not write a Makefile to re-run the workflow.
+7.  Visual inspection of the figures: I compared the four files fig-X-total-1 that include all other figures.
+
+\clearpage
+
+Here are the original figure from the directory `code/` and the reproduced figure from the directory `codecheck/`:
+
+## Original and Reproduced Figures
+
+```{r fig-1-original, echo=FALSE, fig.align='center', fig.cap='Original figure', message=FALSE, out.width='0.6\\linewidth'}
+knitr::include_graphics("../figures-cohens_d_files/figure-html/fig-1-total-1.png")
+```
+
+```{r fig-1-checked, echo = FALSE, message=FALSE, fig.align='center', fig.cap='Reproduced figure', out.width='0.6\\linewidth'}
+knitr::include_graphics("../codecheck/figures/fig-1-total-1.png")
+```
+
+
+```{r fig-2-original, echo = FALSE, message=FALSE, fig.align='center', fig.cap='Original figure', out.width='0.6\\linewidth'}
+knitr::include_graphics("../figures-cohens_d_files/figure-html/fig-2-total-1.png")
+```
+
+```{r fig-2-checked, echo = FALSE, message=FALSE, fig.align='center', fig.cap='Reproduced figure', out.width='0.6\\linewidth'}
+knitr::include_graphics("../codecheck/figures/fig-2-total-1.png")
+```
+
+
+```{r fig-3-original, echo = FALSE, message=FALSE, fig.align='center', fig.cap='Original figure', out.width='0.6\\linewidth'}
+knitr::include_graphics("../figures-correlations_files/figure-html/fig-3-total-1.png")
+```
+
+```{r fig-3-checked, echo = FALSE, message=FALSE, fig.align='center', fig.cap='Reproduced figure', out.width='0.6\\linewidth'}
+knitr::include_graphics("../codecheck/figures/fig-3-total-1.png")
+```
+
+
+```{r fig-4-original, echo = FALSE, message=FALSE, fig.align='center', fig.cap='Original figure', out.width='0.6\\linewidth'}
+knitr::include_graphics("../figures-correlations_files/figure-html/fig-4-total-1.png")
+```
+
+```{r fig-4-checked, echo = FALSE, message=FALSE, fig.align='center', fig.cap='Reproduced figure', out.width='0.6\\linewidth'}
+knitr::include_graphics("../codecheck/figures/fig-4-total-1.png")
+```
