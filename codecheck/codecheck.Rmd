@@ -61,13 +61,13 @@ The reproduction of the figures from the repository was easy due to the workflow
 The following files are uploaded to a deposit on Zenodo from the directory `codecheck/` in the repository:
 
 1.  I agreed to do the codecheck and read the [CODECHECK process](https://codecheck.org.uk/process/) and the [README.md](https://github.com/eduardklap/sample-size-codecheck?tab=readme-ov-file) from the associated project.
-2.  As suggested under *Workflow*, I created a new RStudio project (Version control) and entered the URL of the repository to clone it. This was my R version:
+2.  As suggested under *Workflow*, I created a new RStudio project (Version control) and entered the URL of the forked repository to clone it. This was my R version at that time:
 
 ```{r Session Info}
 print(sessionInfo())
 ```
 
-3.  I installed the packages. Both failed to install due to my folder having a 00LOCK folder. I deleted the folder which led to the package successfully installing. neuroUP also installed dependency 'boostrap'. I later also installed the float package hoping that this would result in the Codecheck image being displayed.
+3.  I installed the packages. Both failed to install due to my folder having a 00LOCK folder. I deleted the folder which led to the package successfully installing. neuroUP also installed dependency 'boostrap'. I later also installed the float package hoping that this would result in the Codecheck image being displayed but it did not.
 
 ```{r Packages}
 # # not run
@@ -76,13 +76,11 @@ print(sessionInfo())
 # install.packages("float")
 ```
 
-3.  I opened figures-cohens_d.qmd and clicked on render at **11:33 CEST**. During the runtime I went back to the [CODECHECK documentation](https://codecheck.org.uk/guide/community-workflow). The Background Job quickly stalled at `16% [fig-1a]`. It increased to `48%` by 13:46 CEST. It was still `48%` at 15:47 CEST (after \~3.5 hours). A markdown file opened itself "**Code for Figures 1-2 based on Cohen's d**" after \~8 hours. The background job kept running. I stopped the job after more than 8 hours (8:33:40).
-4.  I started rendering the code of the figures-correlations at 20:06 CEST. 48% after 1h. Accidentally stopped at 21:11 CEST, restarted. Finished at 22:47 CEST.
-5.  I created a directory *codecheck* and saved this file in it.
-6.  I could not write a Makefile to re-run the workflow.
-7.  Visual inspection of the figures: I compared the four files fig-X-total-1 that include all other figures.
-
-\clearpage
+4.  I opened figures-cohens_d.qmd and clicked on render at **11:33 CEST**. During the runtime I went back to the [CODECHECK documentation](https://codecheck.org.uk/guide/community-workflow). The Background Job quickly stalled at `16% [fig-1a]`. It increased to `48%` by 13:46 CEST. It was still `48%` at 15:47 CEST (after \~3.5 hours). A markdown file opened itself "**Code for Figures 1-2 based on Cohen's d**" after \~8 hours. The background job kept running. I stopped the job after more than 8 hours (8:33:40). I do not know why the background job kept running despite the files already being created.
+5.  I started rendering the code of the **figures-correlations** at 21:11 CEST. The rendering was finished at 22:47 CEST.
+6.  I created a directory *codecheck* and saved this file in it.
+7.  I could not write a Makefile to re-run the workflow.
+8.  Visual inspection of the figures: I compared the four files fig-X-total-1 that include all other figures (see below). I switched between the original and the reproduced file, respectively. They differed with respect to the line width of the dashed lines and some other minor parts of the format. Besides these difference, I could successfully reproduce the results.
 
 Here are the original figure from the directory `code/` and the reproduced figure from the directory `codecheck/`:
 

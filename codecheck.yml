@@ -24,7 +24,7 @@ codechecker:
   - name: Lukas Röseler
     ORCID: 0000-0002-6446-1901
 
-report:
-certificate: 2024-0XX
+report: https://doi.org/10.5281/zenodo.13945051
+certificate: 2024-005
 check_time: "2024-10-15"
 repository: https://github.com/codecheckers/sample-size-codecheck
