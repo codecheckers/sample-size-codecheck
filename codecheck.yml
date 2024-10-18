@@ -24,6 +24,8 @@ codechecker:
   - name: Lukas Röseler
     ORCID: 0000-0002-6446-1901
 
+summary: >
+   This report checks the code of the article Sample size estimation for task-related functional MRI studies using Bayesian updating. (https://doi.org/10.31234/osf.io/cz32t (currently under review at Developmental Cognitive Neuroscience)). See section Notes for details about running the code. The CODECHECK was successful. The created figures figures_cohens_d.html and figures-correlations.html are visually very close to the one in the repository. The reproduction of the figures from the repository was easy due to the workflow and integration with Quarto and RStudio.
 report: https://doi.org/10.5281/zenodo.13945051
 certificate: 2024-005
 check_time: "2024-10-15"
